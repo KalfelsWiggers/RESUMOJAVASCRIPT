@@ -5,17 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESUMO JAVASCRIPT</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     
     Digite seu nome:
     <input type="text" id="nome">
-    <button onclick="Confirmar();"> OK </button>
+    
+    <button class="BT" onclick="Confirmar();">
+        <img src="top.png" width="45px">
+        <br>
+        OK
+    </button>
+    
+    <button class="BT" onclick="MostrarJanela();">
+        <img src="janela.png" width="30px">
+        <br>
+        JANELA
+    </button>
+
+    <button class="BT" onclick="Somar();"> 
+        <img src="+.png" width="30px"> 
+        <br>
+        SOMAR
+    </button>
 
     <div id="resposta">
         Você digitou:
         <span id="teste"> </span>
     </div>
+
+    <br>
+    RESULTADO: <input type="text" id="resultado">
+
+    <div class="janelinha" id="janelinha">
+        Este texto está dentro da div janelinha.
+        <br> 
+        <img onclick="Fechar();" src="x.png" width="50px">
+    </div>
+
+    <div class="D1"> TEXTO DA D1 </div>
+    <div class="D2"> TEXTO DA D2 </div>
+    <div class="D3"> TEXTO DA D3 </div>
+
+    <br> <br>
+
+    <button class="BT" onclick="Imprimir();">
+        <img src="impressora.png" width="50px">
+        <br>
+        IMPRIMIR
+    </button>
 
 </body>
 <script src="script.js"> </script>
